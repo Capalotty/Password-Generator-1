@@ -1,0 +1,60 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+    background-image: url("drew-beamer-kUHfMW8awpE-unsplash.jpg");
+    background-size: cover;
+    font-weight: bold;
+}
+
+section{
+    height: 90vh;
+    display: flex;
+    flex-direction:column;
+    color: white;
+}
+
+.container {
+    width: 500px;
+    height: 60vh;
+    background: #686868;
+    margin: auto;
+    border-radius: 10px;
+    padding-top: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.firstp {
+    font-size: 30px;
+    padding: 2px;
+}
+
+.secondp {
+    font-size: 15px;
+    color: rgb(193, 207, 195);
+}
+
+#generate{
+    background-color: rgb(68, 196, 123);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    width: 150px;
+    height: 35px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.display{
+    padding-top: 30px;
+}
+#thirdp, #forthp{
+    margin-right: 10px;
+    background-color: rgb(37, 122, 74);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+}
