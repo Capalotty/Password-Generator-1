@@ -18,7 +18,7 @@
             <hr>
             <div class="display">
                 <button id="thirdp" onclick="copy('thirdp')"></button>
-                <button id="forthp" onclick="copy()"></button>
+                <button id="forthp" onclick="copy('forthp')"></button>
             </div>
             
         </div>
@@ -37,7 +37,7 @@
         function password(){
 
                 const passwordChar = generate()
-                const passwordChar2 = generate2()
+                const passwordChar2 = generate()
 
                 third.innerHTML = passwordChar;
                 forth.innerHTML = passwordChar2;
@@ -56,23 +56,11 @@
 
         }
 
-        function generate2 (){
-
-                let num2 = [];
-                for(let i = 0; i < char.length; i++){
-                        let randomTwo = char[Math.floor( Math.random() * char.length )] ;
-                        if(num2.length != 15){
-                                num2.push(randomTwo)
-                        }
-
-                }
-                return num2.join('')
-
-        }
-
-        function copy(){
-                alert("Copied ");        
-        }
+        function copy(id) {
+        var copyText =  document.getElementById(id);;
+        navigator.clipboard.writeText(copyText.innerHTML);
+        alert("Copied the Password " );
+      }
         
     </script>
 </body>
